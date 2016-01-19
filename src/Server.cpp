@@ -189,7 +189,7 @@ void cServer::PlayerDestroying(const cPlayer * a_Player)
 
 bool cServer::InitServer(cSettingsRepositoryInterface & a_Settings, bool a_ShouldAuth)
 {
-	m_Description = a_Settings.GetValueSet("Server", "Description", "Eboo!");
+	m_Description = a_Settings.GetValueSet("Server", "Description", "This server is using EbooMC as the core!");
 	m_MaxPlayers  = a_Settings.GetValueSetI("Server", "MaxPlayers", 4);
 	m_bIsHardcore = a_Settings.GetValueSetB("Server", "HardcoreEnabled", false);
 	m_bAllowMultiLogin = a_Settings.GetValueSetB("Server", "AllowMultiLogin", true);
