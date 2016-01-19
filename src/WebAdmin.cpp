@@ -105,7 +105,7 @@ bool cWebAdmin::Init(void)
 		m_IniFile.WriteFile("webadmin.ini");
 	}
 
-	if (!m_IniFile.GetValueSetB("WebAdmin", "Enabled", true))
+	if (!m_IniFile.GetValueSetB("WebAdmin", "Enabled", false))
 	{
 		// WebAdmin is disabled, bail out faking a success
 		return true;
